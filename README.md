@@ -1,2 +1,2 @@
-# portfolio-edit
- Seoyeon's portfolio-edit
+# portfolio
+ Seoyeon's portfolio
