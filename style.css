@@ -5,7 +5,8 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #b39ddb;
+  --color-light-pink: #ffebee;
+  --color-pink: #d1c4e9;
   --color-dark-pink: #9575cd;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -256,7 +257,7 @@ p {
 /* Skill */
 
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-light-pink);
 }
 
 .skillset {
@@ -286,15 +287,17 @@ p {
 }
 
 .skill__bar {
-  background-color: var(--color-grey);
+  background-color: #f3e5f5;
   width: 100%;
-  height: 3px;
+  height: 7px;
+  border-radius: 15px;
 }
 
 .skill__value {
+  background-color: #9fa8da;
   width: 70%;
-  height: 3px;
-  background-color: var(--color-orange);
+  height: 7px;
+  border-radius: 15px;
 }
 
 .skillset__right {
@@ -336,7 +339,7 @@ p {
 }
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: #ba68c8;
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -399,7 +402,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-pink);
 }
 
 .project__description h3:after {
