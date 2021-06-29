@@ -196,6 +196,10 @@ p {
 
 /* About */
 
+.about__me {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -243,11 +247,13 @@ p {
 }
 
 .job__name,
-.job__period {
+.job__period,
+.job__detail {
   color: var(--color-light-grey);
 }
 
-.job__name {
+.job__name,
+.job__detail {
   font-size: var(--font-small);
 }
 
@@ -473,6 +479,7 @@ p {
 
 .contact__title,
 .contact__email,
+.contact__phone,
 .contact__rights {
   color: var(--color-white);
 }
@@ -561,6 +568,11 @@ p {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
+  }
+
+  .about__me {
+    margin: auto;
+    padding: 45px;
   }
 
   .major__icon {
