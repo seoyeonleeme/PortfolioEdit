@@ -1,7 +1,6 @@
 'use strict';
 
 //Make navbar transparent when it is on the top
-
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -15,7 +14,6 @@ document.addEventListener('scroll', () => {
 });
 
 //Navbar toggle button for small screen
-
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 
 navbarToggleBtn.addEventListener('click', () => {
@@ -23,7 +21,6 @@ navbarToggleBtn.addEventListener('click', () => {
 });
 
 //Handle scrolling when tapping on the navbar menu
-
 const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (event) => {
@@ -50,16 +47,13 @@ function scrollIntoView(selector) {
 }
 
 //Make home slowy fade to transparent as the window scrolls down
-
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  //console.log(1-window.scrollY/homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
 //Show "arrow-up" button when scrolling down
-
 const arrowUp = document.querySelector('.arrow-up');
 
 document.addEventListener('scroll', () => {
@@ -71,7 +65,6 @@ document.addEventListener('scroll', () => {
 });
 
 //Handle click on the "arrow up" button
-
 arrowUp.addEventListener('click', (event) => {
   scrollIntoView('#home');
 });
@@ -81,8 +74,7 @@ function scrollIntoView(selector) {
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
 
-//Projects
-
+//Project filtering
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
@@ -100,7 +92,7 @@ workBtnContainer.addEventListener('click', (e) => {
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
 
-  //console.log(filter);
+  //Project animation
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
