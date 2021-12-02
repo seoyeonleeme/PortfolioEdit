@@ -1,2 +1,1 @@
-# portfolio
- Seoyeon's portfolio
+배포사이트: https://seoyeonleeme.github.io/PortfolioEdit
