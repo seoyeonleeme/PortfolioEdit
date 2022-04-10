@@ -198,6 +198,7 @@ p {
 
 .about__me {
   font-family: 'Noto Sans KR', sans-serif;
+  font-weight: var(--weight-semi-bold);
   margin: 25px 0px;
 }
 
@@ -270,6 +271,8 @@ p {
 
 .attributes {
   margin: 25px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: var(--weight-semi-bold);
 }
 
 .skillset {
@@ -279,7 +282,8 @@ p {
   margin: 20px 0;
 }
 
-.skillset__title {
+.skillset__title,
+.skillset__title__ETC {
   color: var(--color-light-white);
 }
 
@@ -330,6 +334,9 @@ p {
   padding: 20px;
 }
 
+.skillset__title__ETC {
+  padding-bottom: 60px;
+}
 /* Work */
 .work__categories {
   margin: 40px;
